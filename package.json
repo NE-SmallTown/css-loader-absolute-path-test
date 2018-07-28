@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NE-SmallTown/css-loader-absolute-path-test.git"
+  },
+  "author": "NE-SmallTown",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^2.1.0",
+    "style-loader": "^0.20.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.0.0"
+  }
+}
