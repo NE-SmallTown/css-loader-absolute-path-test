@@ -1,24 +1,23 @@
 .img {
   width: 100%;
   height: 300px;
-  background-image: url("/images/43454645.jpg");
+  background-image: url("@/images/43454645.jpg");
 }
 
-@font-face {
-  font-family: "ne-modal";
-  src: url('/fonts/iconfont.eot?t=1532746171676'); /* IE9*/
-  src: url('/fonts/iconfont.eot?t=1532746171676#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/fonts/iconfont.woff') format('woff'), /* chrome, firefox */
-  url('/fonts/iconfont.ttf?t=1532746171676') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('/fonts/iconfont.svg?t=1532746171676#ne-modal') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "ne-modal";
+  src: url('@/fonts/iconfont.eot?t=1535701394606'); /* IE9*/
+  src: url('@/fonts/iconfont.eot?t=1535701394606#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('@/fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('@/fonts/iconfont.ttf?t=1535701394606') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('@/fonts/iconfont.svg?t=1535701394606#ne-modal') format('svg'); /* iOS 4.1- */
 }
 
 .ne-modal {
   font-family:"ne-modal" !important;
+  font-size:16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 50px;
 }
 
 .icon-wenhaoweiwanchengyanzheng:before { content: "\a600"; }
@@ -34,4 +33,5 @@
 .icon-shibai:before { content: "\a604"; }
 
 .icon-shibai1:before { content: "\a605"; }
+
 

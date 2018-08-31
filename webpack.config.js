@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const extractLESS = new ExtractTextPlugin({
     filename: '[name].css'
 });
-
 module.exports = {
     entry: './index.js',
     output: {
@@ -22,8 +21,13 @@ module.exports = {
                     use: [{
                         loader: 'css-loader',
                         query: {
+                            url: true,
                             importLoaders: 1,
-                            // root: process.cwd(),
+                            // below 2 ways can solve the absolute path problem
+                            // root: __dirname,
+                            alias: { // this workarount need css-loder to fix a bug
+                                '@': __dirname
+                            }
                         }
                     },
                         { loader: 'less-loader' }
@@ -37,7 +41,6 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|svg|ttf|woff|eot)$/,
                 loader: 'url-loader',
-                exclude: file => console.log(11111, file),
                 options: {
                     limit: 100, // byte
                     fallback: 'file-loader',
